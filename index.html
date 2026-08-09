@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Визитка</title>
+  <meta name="description" content="">
+
+  <!-- Красивое превью, когда ссылкой делятся в мессенджерах -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="">
+  <meta property="og:description" content="">
+
+  <!-- Иконка во вкладке браузера: точка акцентного цвета, без отдельного файла -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='12' fill='%233452d9'/></svg>">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- ШАПКА: имя слева, навигация и переключатель языка справа -->
+  <header class="header">
+    <div class="container header__inner">
+      <a class="header__name" href="#top" data-slot="header-name"></a>
+
+      <nav class="nav" data-slot="nav"></nav>
+
+      <button class="lang" type="button" data-slot="lang" aria-label="Сменить язык"></button>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ПЕРВЫЙ ЭКРАН -->
+    <section class="hero">
+      <div class="container hero__inner" data-slot="hero"></div>
+    </section>
+
+    <!-- ОБО МНЕ -->
+    <section class="section" id="about">
+      <div class="container" data-slot="about"></div>
+    </section>
+
+    <!-- ОПЫТ РАБОТЫ -->
+    <section class="section section--tint" id="experience">
+      <div class="container" data-slot="experience"></div>
+    </section>
+
+    <!-- УСЛУГИ -->
+    <section class="section" id="services">
+      <div class="container" data-slot="services"></div>
+    </section>
+
+    <!-- КОНТАКТЫ -->
+    <section class="section section--tint" id="contact">
+      <div class="container" data-slot="contact"></div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner" data-slot="footer"></div>
+  </footer>
+
+  <!-- Сначала содержимое, потом код, который его расставляет по местам -->
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

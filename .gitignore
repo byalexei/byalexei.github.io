@@ -1,0 +1,10 @@
+# Исходник фотографии — на сайте используется обрезанный photo.jpg
+IMG_0107_cut.jpg
+
+# Служебная папка для локального просмотра
+.claude/
+
+# Мусор Windows и macOS
+Thumbs.db
+desktop.ini
+.DS_Store
