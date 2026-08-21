@@ -8,3 +8,6 @@ IMG_0107_cut.jpg
 Thumbs.db
 desktop.ini
 .DS_Store
+
+# Personal Claude Code state: a machine-specific permission allowlist.
+.claude/settings.local.json
