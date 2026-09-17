@@ -217,7 +217,7 @@ const SITE = {
         {
           period: '2011',
           place: 'Moscow Pedagogical State University',
-          detail: 'Faculty of Pedagogy and Psychology: pedagogy, psychological and pedagogical counseling'
+          detail: 'Faculty of Pedagogy and Psychology. Degree: Lecturer in Higher Education Pedagogy; additional specialization in psychological counseling'
         }
       ],
       coursesHeading: 'Courses and certificates',
@@ -466,7 +466,7 @@ const SITE = {
         {
           period: '2011',
           place: 'Московский педагогический государственный университет',
-          detail: 'Факультет педагогики и психологии: педагогика, психолого-педагогическое консультирование'
+          detail: 'Факультет педагогики и психологии. Специальность: преподаватель педагогики высшей школы; дополнительная специализация — психологическое консультирование'
         }
       ],
       coursesHeading: 'Курсы и сертификаты',
