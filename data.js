@@ -22,6 +22,11 @@ const SITE = {
   /* Фотография рядом с именем. Файла нет — покажется кружок с инициалами. */
   photo: 'photo.jpg',
 
+  /* Код подтверждения владения из Google Search Console
+     (Settings → Ownership verification → HTML tag → значение content="…").
+     Пусто — тег не выводится. */
+  googleSiteVerification: '',
+
   /* Картинки для превью ссылок (1200×630). Генерируются: python tools/og-image.py */
   ogImage: { en: 'og-image-en.jpg', ru: 'og-image-ru.jpg' },
 
@@ -238,7 +243,7 @@ const SITE = {
         {
           title: 'Job grading and rewards',
           desc: 'A transparent system of jobs and pay: everyone knows what they are paid for and what it takes to earn more.',
-          bullets: ['Job descriptions and evaluation', 'Grades and salary ranges', 'Bonus and benefits policy', 'AI-assisted automated grading']
+          bullets: ['Job descriptions and evaluation', 'Grades and salary ranges', 'Bonus and benefits policy', 'Proprietary AI-powered automated job grading platform']
         },
         {
           title: 'Competency model and assessment',
@@ -362,7 +367,7 @@ const SITE = {
         'Внедрил систему грейдов, модель компетенций и систему оценки в масштабе холдинга — HR Baraka Group',
         'Запустил performance management на базе KPI / OKR в HR-департаменте из 25+ человек и 7 функций',
         'Провёл HR-интеграцию ~10 сделок M&A и СП в Р-Фарм, включая Canon Medical Systems и Albiogen',
-        'Цифровизировал ключевые HR-процессы штаб-квартиры и 14 зарубежных офисов Русатом — Международная Сеть'
+        'Цифровизировал ключевые HR-процессы штаб-квартиры и 14 зарубежных офисов «Русатом — Международная Сеть»'
       ]
     },
 
@@ -487,7 +492,7 @@ const SITE = {
         {
           title: 'Грейдинг и вознаграждение',
           desc: 'Прозрачная система должностей и оплаты труда: понятно, за что человек получает деньги и что нужно, чтобы получать больше.',
-          bullets: ['Описание и оценка должностей', 'Грейды и вилки окладов', 'Политика премирования и льгот', 'Автоматизированное грейдирование с AI']
+          bullets: ['Описание и оценка должностей', 'Грейды и вилки окладов', 'Политика премирования и льгот', 'Собственная AI-платформа автоматизированного грейдирования']
         },
         {
           title: 'Модель компетенций и оценка',

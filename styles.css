@@ -362,6 +362,11 @@ img { max-width: 100%; display: block; }
 .dropdown__menu a:hover { background: var(--wash); color: var(--accent); }
 .dropdown__menu svg { width: 18px; height: 18px; color: var(--accent); }
 
+/* На телефоне главная кнопка во всю ширину, меню резюме и LinkedIn — парой ниже */
+@media (max-width: 480px) {
+  .hero .buttons .btn--primary { width: 100%; justify-content: center; }
+}
+
 /* --- Секции ------------------------------------------------------ */
 
 .section { padding: clamp(56px, 9vw, 94px) 0; }
@@ -469,7 +474,7 @@ img { max-width: 100%; display: block; }
 
 .results {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 16px;
   margin-top: 36px;
   counter-reset: result;
@@ -484,6 +489,10 @@ img { max-width: 100%; display: block; }
   color: var(--ink);
   font-size: 16px;
   line-height: 1.5;
+}
+
+@media (max-width: 700px) {
+  .results { grid-template-columns: 1fr; }
 }
 
 /* Номер результата в градиентном кружке */
@@ -529,7 +538,7 @@ img { max-width: 100%; display: block; }
 .job__role { font-size: 1.12rem; }
 
 .job__company {
-  color: var(--accent);
+  color: var(--ink-soft);
   font-size: 15px;
   font-weight: 500;
   margin-bottom: 10px;
@@ -759,7 +768,7 @@ img { max-width: 100%; display: block; }
 
 .contact__list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(215px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 16px;
   margin-bottom: 36px;
 }
@@ -827,7 +836,16 @@ img { max-width: 100%; display: block; }
   margin-bottom: 5px;
 }
 
-.contact__value { font-weight: 500; word-break: break-word; }
+/* Адреса не рвутся посередине: переносы разрешены только там,
+   где сборка вставила <wbr> (перед @ и после /), а разрыв где попало —
+   последнее средство, если строка не помещается вообще */
+.contact__value {
+  display: block;
+  font-size: 15px;
+  font-weight: 500;
+  word-break: normal;
+  overflow-wrap: anywhere;
+}
 
 /* --- Рекомендации (показываются, когда появятся цитаты) ---------- */
 
@@ -853,7 +871,7 @@ img { max-width: 100%; display: block; }
   color: var(--ink);
 }
 
-.quote__text::before { content: 'C'; color: var(--accent); font-size: 1.6em; line-height: 0; margin-right: 4px; }
+.quote__text::before { content: '“'; color: var(--accent); font-size: 1.6em; line-height: 0; margin-right: 4px; }
 
 .quote__author { display: grid; gap: 2px; font-size: 14px; }
 .quote__name { font-weight: 600; }

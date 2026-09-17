@@ -33,6 +33,9 @@ const initials = (name) =>
 // Оставляет в номере только цифры и плюс: '+7 (903) 527-20-60' -> '+79035272060'
 const digits = (s) => String(s).replace(/[^\d+]/g, '');
 
+// Разрешает перенос адреса только по логичным границам: перед @ и после /
+const breakable = (s) => esc(s).replace(/@/g, '<wbr>@').replace(/\//g, '/<wbr>');
+
 // Страницы для сборки: язык -> папка и префикс путей к общим файлам
 const PAGES = {
   en: { dir: '',    base: '',    url: SITE.url + '/' },
@@ -83,6 +86,7 @@ function head(lang, t, page) {
 
   <title>${esc(t.meta.title)}</title>
   <meta name="description" content="${esc(t.meta.description)}">
+  ${SITE.googleSiteVerification ? `<meta name="google-site-verification" content="${esc(SITE.googleSiteVerification)}">` : ''}
   <link rel="canonical" href="${page.url}">
   <link rel="alternate" hreflang="en" href="${PAGES.en.url}">
   <link rel="alternate" hreflang="ru" href="${PAGES.ru.url}">
@@ -351,7 +355,7 @@ function contact(t) {
             <span class="contact__icon">${ICONS[i.icon]}</span>
             <span class="contact__body">
               <span class="contact__label">${esc(i.label)}${i.note ? ` <span class="contact__note">· ${esc(i.note)}</span>` : ''}${i.badge ? ` <span class="contact__badge">${esc(i.badge)}</span>` : ''}</span>
-              <span class="contact__value">${esc(i.value)}</span>
+              <span class="contact__value">${breakable(i.value)}</span>
             </span>
           </a>`).join('')}
         </div>
