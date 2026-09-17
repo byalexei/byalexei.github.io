@@ -48,7 +48,7 @@ const SITE = {
       title: 'Alexey Bychkov — HR Director | People & Culture Leader',
       description: 'HR Director with 16 years of experience. Builds HR functions from the ground up: grading and rewards, assessment, performance management, recruitment.',
       ogTitle: 'Alexey Bychkov — HR Director',
-      ogDescription: '16 years in HR, 5+ as HR Director. Job grading & C&B, competency models, performance management, HR in M&A. Open to new roles.',
+      ogDescription: '16 years in HR, 5+ as HR Director. Grading & C&B, competency models, performance management, HR in M&A. Open to new roles.',
       photoAlt: 'Alexey Bychkov, HR Director — portrait',
       firstName: 'Alexey',
       lastName: 'Bychkov'
