@@ -1,71 +1,449 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en" data-lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Визитка</title>
-  <meta name="description" content="">
+  <title>Alexey Bychkov — HR Director | People &amp; Culture Leader</title>
+  <meta name="description" content="HR Director with 16 years of experience. Builds HR functions from the ground up: grading and rewards, assessment, performance management, recruitment.">
+  <link rel="canonical" href="https://byalexei.github.io/">
+  <link rel="alternate" hreflang="en" href="https://byalexei.github.io/">
+  <link rel="alternate" hreflang="ru" href="https://byalexei.github.io/ru/">
+  <link rel="alternate" hreflang="x-default" href="https://byalexei.github.io/">
 
-  <!-- Красивое превью, когда ссылкой делятся в мессенджерах -->
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="">
-  <meta property="og:description" content="">
+  <!-- Превью ссылки в мессенджерах и соцсетях (Open Graph) -->
+  <meta property="og:type" content="profile">
+  <meta property="og:url" content="https://byalexei.github.io/">
+  <meta property="og:title" content="Alexey Bychkov — HR Director">
+  <meta property="og:description" content="16 years in HR, 5+ as HR Director. Job grading &amp; C&amp;B, competency models, performance management, HR in M&amp;A. Open to new roles.">
+  <meta property="og:image" content="https://byalexei.github.io/og-image-en.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Alexey Bychkov, HR Director — portrait">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="ru_RU">
+  <meta property="og:site_name" content="Alexey Bychkov">
+  <meta property="profile:first_name" content="Alexey">
+  <meta property="profile:last_name" content="Bychkov">
 
-  <!-- Иконка во вкладке браузера: точка акцентного цвета, без отдельного файла -->
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='12' fill='%233452d9'/></svg>">
+  <!-- Превью в X / Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Alexey Bychkov — HR Director">
+  <meta name="twitter:description" content="16 years in HR, 5+ as HR Director. Job grading &amp; C&amp;B, competency models, performance management, HR in M&amp;A. Open to new roles.">
+  <meta name="twitter:image" content="https://byalexei.github.io/og-image-en.jpg">
+
+  <!-- Иконки вкладки и домашнего экрана -->
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <meta name="theme-color" content="#3452d9">
 
   <link rel="stylesheet" href="styles.css">
-</head>
+  <style>:root{--accent:#3452d9;--accent-2:#0e7490;}</style>
 
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Alexey Bychkov","givenName":"Alexey","familyName":"Bychkov","jobTitle":"HR Director · People & Culture Leader","description":"HR Director with 16 years of experience. Builds HR functions from the ground up: grading and rewards, assessment, performance management, recruitment.","url":"https://byalexei.github.io/","image":"https://byalexei.github.io/photo.jpg","email":"mailto:byalexei@gmail.com","sameAs":["https://www.linkedin.com/in/avbychkov","https://t.me/avbychkov"]}</script>
+</head>
 <body>
 
-  <!-- ШАПКА: имя слева, навигация и переключатель языка справа -->
   <header class="header">
     <div class="container header__inner">
-      <a class="header__name" href="#top" data-slot="header-name"></a>
-
-      <nav class="nav" data-slot="nav"></nav>
-
-      <button class="lang" type="button" data-slot="lang" aria-label="Сменить язык"></button>
+      <a class="header__name" href="#top">Alexey Bychkov</a>
+      <nav class="nav" aria-label="Sections">
+        <a href="#about">About</a>
+        <a href="#results">Results</a>
+        <a href="#experience">Experience</a>
+        <a href="#expertise">What I do</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="lang" href="ru/" hreflang="ru" lang="ru" data-lang-switch="ru" title="Русская версия">RU</a>
     </div>
   </header>
 
   <main id="top">
 
-    <!-- ПЕРВЫЙ ЭКРАН -->
     <section class="hero">
-      <div class="container hero__inner" data-slot="hero"></div>
+      <div class="container hero__inner">
+        <div>
+          <div class="hero__status">Open to new roles and projects</div>
+          <h1 class="hero__name">Alexey Bychkov</h1>
+          <p class="hero__role">HR Director · People &amp; Culture Leader</p>
+          <p class="hero__tagline">I build the HR function from the ground up — and fix the one you already have: grading and rewards, assessment, performance management, recruitment. 16 years in the profession, 5+ of them as HR Director.</p>
+          <p class="hero__location">Vietnam (GMT+7) · remote · open to relocation and travel</p>
+          <div class="buttons">
+            <a class="btn btn--primary" href="#contact">Get in touch</a>
+            <div class="dropdown">
+              <button class="btn btn--ghost dropdown__toggle" type="button" aria-haspopup="true" aria-expanded="false">
+                Download CV <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+              </button>
+              <div class="dropdown__menu" role="menu">
+            <a href="files/cv-en.pdf" download="Alexey_Bychkov_CV_EN.pdf" hreflang="en"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg><span>English (PDF)</span></a>
+            <a href="files/cv-ru.pdf" download="Бычков_Алексей_CV_RU.pdf" hreflang="ru"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg><span>Russian (PDF)</span></a>
+              </div>
+            </div>
+            <a class="btn btn--icon" href="https://www.linkedin.com/in/avbychkov" target="_blank" rel="noopener noreferrer" title="LinkedIn profile" aria-label="LinkedIn profile"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+          </div>
+        </div>
+        <div class="hero__avatar">
+          <div class="hero__avatar-inner"><img src="photo.jpg" alt="Alexey Bychkov, HR Director — portrait" width="760" height="760" fetchpriority="high"></div>
+        </div>
+      </div>
     </section>
 
-    <!-- ОБО МНЕ -->
     <section class="section" id="about">
-      <div class="container" data-slot="about"></div>
+      <div class="container">
+        <h2 class="section__heading">About me</h2>
+        <div class="about">
+          <div class="about__text">
+            <p>16 years in HR: over five of them as HR Director, another five as HR Business Partner. Twice built the HR function from scratch in new businesses with limited resources — from the first recruiter to a full-scope function: recruitment, C&amp;B, job grading, assessment, learning and development, communications, HR administration.</p>
+            <p>Supported M&amp;A deals and joint venture launches, managed international teams across Russia, CIS and Europe, including a network of 14 offices worldwide. Currently a partner at Gradex, a full-cycle HR consulting practice with a proprietary AI-powered job grading platform in its toolkit.</p>
+            <p>In the HR function I value a service mindset and a technological edge. Looking for an HR leadership role with a broad scope of responsibility and a matching level of authority.</p>
+          </div>
+          <div>
+            <div class="facts">
+              
+              <div class="fact">
+                <div class="fact__value">16 years</div>
+                <div class="fact__label">in the profession</div>
+              </div>
+              <div class="fact">
+                <div class="fact__value">5+ years</div>
+                <div class="fact__label">as HR Director</div>
+              </div>
+              <div class="fact">
+                <div class="fact__value">~10</div>
+                <div class="fact__label">M&amp;A and JV deals</div>
+              </div>
+              <div class="fact">
+                <div class="fact__value">14</div>
+                <div class="fact__label">offices in the network</div>
+              </div>
+              <div class="fact">
+                <div class="fact__value">25+</div>
+                <div class="fact__label">team members led</div>
+              </div>
+            </div>
+            
+          <div class="skills ">
+            <div class="skills__heading">Core competencies</div>
+            <ul class="skills__list">
+              <li>Organizational Development</li>
+              <li>Job Grading &amp; C&amp;B</li>
+              <li>M&amp;A HR Integration</li>
+              <li>HR Tech &amp; AI in HR</li>
+              <li>Performance Management (KPI / OKR)</li>
+              <li>Recruitment &amp; Executive Search</li>
+              <li>Competency Models &amp; Assessment</li>
+              <li>Succession Planning</li>
+              <li>Internal Communications &amp; Employer Branding</li>
+              <li>HR Analytics</li>
+              <li>English — C1</li>
+            </ul>
+          </div>
+            
+          <div class="skills skills--tools">
+            <div class="skills__heading">Tools</div>
+            <ul class="skills__list">
+              <li>1C HRM</li>
+              <li>E-Staff</li>
+              <li>Experium</li>
+              <li>Huntflow</li>
+              <li>SHL Tools</li>
+              <li>Asana</li>
+              <li>Jira</li>
+              <li>MS Project</li>
+              <li>Visio</li>
+              <li>AI tools</li>
+            </ul>
+          </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- ОПЫТ РАБОТЫ -->
-    <section class="section section--tint" id="experience">
-      <div class="container" data-slot="experience"></div>
+    <section class="section section--tint" id="results">
+      <div class="container">
+        <h2 class="section__heading">Selected results</h2>
+        <ol class="results">
+          <li>Company-wide job grading system, competency model and assessment framework — implemented at HR Baraka Group</li>
+          <li>KPI / OKR performance management rolled out across a 25+ person, 7-function HR department</li>
+          <li>HR integration of ~10 M&amp;A and JV deals at R-Pharm, including Canon Medical Systems and Albiogen</li>
+          <li>Core HR processes digitalized across the Moscow HQ and 14 international offices of Rusatom International Network</li>
+        </ol>
+      </div>
     </section>
 
-    <!-- УСЛУГИ -->
-    <section class="section" id="services">
-      <div class="container" data-slot="services"></div>
+    <section class="section" id="experience">
+      <div class="container">
+        <h2 class="section__heading">Experience — 16 years</h2>
+        <div class="timeline">
+          <article class="job">
+            <div class="job__period">Nov 2025 — present</div>
+            <div>
+              <h3 class="job__role">Partner</h3>
+              <div class="job__company">Gradex · Tashkent (remote)</div>
+              <ul class="job__points">
+                <li>Full-cycle HR consulting: organizational development and design, recruitment, competency models, job assessment and grading, employer branding and internal communications.</li>
+                <li>Diagnosing client HR challenges and tailoring solutions to the specific business context — from problem framing to implementation.</li>
+                <li>The practice runs a proprietary AI-powered grading platform, applied on client projects.</li>
+              </ul>
+            </div>
+          </article>
+          <article class="job">
+            <div class="job__period">Jan 2023 — Oct 2025</div>
+            <div>
+              <h3 class="job__role">Director of HR and Organizational Development</h3>
+              <div class="job__company">HR Baraka Group · Tashkent</div>
+              <ul class="job__points">
+                <li>A department of 25+ people across 7 functions in the HR competence center of a holding serving companies that generate ~20% of Uzbekistan's economy.</li>
+                <li>Implemented a company-wide job grading system, a competency model and job profiles, and built the assessment framework.</li>
+                <li>Rolled out KPI / OKR-based performance management and a full set of internal HR policies.</li>
+                <li>Delivered 20+ commercially successful external projects with the team: recruitment, grading, performance management, assessment, training.</li>
+                <li>Launched an internship and knowledge-sharing program, expanded the internal training catalog, opened new communication channels.</li>
+              </ul>
+            </div>
+          </article>
+          <article class="job">
+            <div class="job__period">Aug 2021 — Jan 2023</div>
+            <div>
+              <h3 class="job__role">HR Director</h3>
+              <div class="job__company">Rusatom International Network (Rosatom) · Moscow</div>
+              <ul class="job__points">
+                <li>HR, internal communications and business travel for the company running Rosatom's global presence: HQ in Moscow and 14 offices worldwide.</li>
+                <li>Rapidly renewed the Russian and international teams in response to new business challenges; built a compact HR team praised by internal clients for service quality.</li>
+                <li>Introduced a transparent candidate assessment system based on a competency model and job profiles.</li>
+                <li>Digitalized document flow and HR processes: internal transfers, annual appraisal, recruitment, business travel, onboarding.</li>
+              </ul>
+            </div>
+          </article>
+          <article class="job">
+            <div class="job__period">Sep 2016 — Aug 2021</div>
+            <div>
+              <h3 class="job__role">HR Business Partner</h3>
+              <div class="job__company">R-Pharm · Moscow</div>
+              <ul class="job__points">
+                <li>Led HR integration of new businesses into the group — around 10 deals, including Canon Medical Systems and Albiogen.</li>
+                <li>Member of the transition-period working group for the sale of a business stake to a minority shareholder (Mitsui).</li>
+                <li>Implemented performance management and succession planning for key positions; delivered internal trainings.</li>
+                <li>C&amp;B: organizational planning and personnel cost budgeting, grade system updates, flexible benefits rollout.</li>
+              </ul>
+            </div>
+          </article>
+          <article class="job">
+            <div class="job__period">Sep 2015 — Oct 2016</div>
+            <div>
+              <h3 class="job__role">Head of Recruitment</h3>
+              <div class="job__company">R-Pharm · Moscow</div>
+              <ul class="job__points">
+                <li>Managed a distributed team of ~10 recruiters (Russia, CIS, Germany): methodology, competency development, budget.</li>
+                <li>International executive search for senior and top management; transformed reporting and introduced modern recruitment metrics.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+        
+        <details class="early">
+          <summary class="early__summary">
+            <span class="early__title">Early career — recruitment and onboarding, 2010–2015</span>
+            <span class="early__hint">4 positions <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></span>
+          </summary>
+          <div class="timeline timeline--early">
+          <article class="job">
+            <div class="job__period">2014 — 2015</div>
+            <div>
+              <h3 class="job__role">Recruitment and Onboarding Manager</h3>
+              <div class="job__company">Finval Group · industrial equipment</div>
+              <ul class="job__points">
+                <li>Full-cycle recruitment at all levels, corporate competency model, welcome trainings.</li>
+              </ul>
+            </div>
+          </article>
+          <article class="job">
+            <div class="job__period">2012 — 2013</div>
+            <div>
+              <h3 class="job__role">Recruitment Specialist</h3>
+              <div class="job__company">R-Pharm</div>
+              <ul class="job__points">
+                <li>Recruitment for sales and marketing, diagnostic assessment tools, assessment centers for the talent pool.</li>
+              </ul>
+            </div>
+          </article>
+          <article class="job">
+            <div class="job__period">2011 — 2012</div>
+            <div>
+              <h3 class="job__role">Recruitment Consultant</h3>
+              <div class="job__company">Skagen · recruitment agency</div>
+              <ul class="job__points">
+                <li>Full cycle, including mass recruitment.</li>
+              </ul>
+            </div>
+          </article>
+          <article class="job">
+            <div class="job__period">2010 — 2011</div>
+            <div>
+              <h3 class="job__role">Recruitment and Onboarding Manager</h3>
+              <div class="job__company">Elgad-ZSI · manufacturing</div>
+              <ul class="job__points">
+                <li>First HR role: recruitment and onboarding at a manufacturing company.</li>
+              </ul>
+            </div>
+          </article>
+          </div>
+        </details>
+        
+        <div class="education">
+          <h3 class="education__heading">Education</h3>
+          
+          <article class="job">
+            <div class="job__period">2011</div>
+            <div>
+              <h4 class="job__role">Moscow Pedagogical State University</h4>
+              <div class="job__points">Faculty of Pedagogy and Psychology: pedagogy, psychological and pedagogical counseling</div>
+            </div>
+          </article>
+          
+          <div class="skills ">
+            <div class="skills__heading">Courses and certificates</div>
+            <ul class="skills__list">
+              <li>AI Fluency: Framework &amp; Foundations (Anthropic, 2025)</li>
+              <li>AI Fluency for Educators (Anthropic, 2025)</li>
+              <li>English C1 Advanced (Skyeng, 2024)</li>
+              <li>Vision Zero: Safety and Health Management (EcoStandard, 2018)</li>
+              <li>Assessment Center Technology and Tools (Moscow Business School, 2013)</li>
+              <li>Recruitment Management and Headhunting (SRC, 2013)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- КОНТАКТЫ -->
+    <section class="section section--tint" id="expertise">
+      <div class="container">
+        <h2 class="section__heading">What I do</h2>
+        <p class="section__intro">Areas where I go deepest — as an in-house leader and as a consultant.</p>
+        <div class="grid">
+          
+          <article class="card">
+            <h3 class="card__title">HR function from scratch</h3>
+            <p class="card__desc">Building HR from a blank page, or rebuilding what is already there. Done it twice from the inside.</p>
+            <ul class="card__bullets">
+              <li>Audit of the current state</li>
+              <li>Roadmap and org design</li>
+              <li>Full set of HR policies</li>
+              <li>Hiring and launching the HR team</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3 class="card__title">Job grading and rewards</h3>
+            <p class="card__desc">A transparent system of jobs and pay: everyone knows what they are paid for and what it takes to earn more.</p>
+            <ul class="card__bullets">
+              <li>Job descriptions and evaluation</li>
+              <li>Grades and salary ranges</li>
+              <li>Bonus and benefits policy</li>
+              <li>AI-assisted automated grading</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3 class="card__title">Competency model and assessment</h3>
+            <p class="card__desc">One shared language for what you expect from people — plus the tools that actually measure it.</p>
+            <ul class="card__bullets">
+              <li>Job profiles</li>
+              <li>Assessment centers</li>
+              <li>Competency-based interviews</li>
+              <li>Talent pool and succession</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3 class="card__title">Performance management</h3>
+            <p class="card__desc">A goal-setting and review system built on KPIs or OKRs — together with the manager training without which it never takes off.</p>
+            <ul class="card__bullets">
+              <li>Goal cascading</li>
+              <li>Review cycle and rules</li>
+              <li>Link to rewards</li>
+              <li>Manager training</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3 class="card__title">HR in M&amp;A and integration</h3>
+            <p class="card__desc">Deal support and team integration. Around 10 deals, international ones included.</p>
+            <ul class="card__bullets">
+              <li>People due diligence</li>
+              <li>Team integration plan</li>
+              <li>Harmonizing pay systems</li>
+              <li>Retaining key people</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3 class="card__title">Recruitment and executive search</h3>
+            <p class="card__desc">Filling key positions and turning recruitment into a process rather than an emergency.</p>
+            <ul class="card__bullets">
+              <li>Executive search</li>
+              <li>International search</li>
+              <li>Funnel and metrics setup</li>
+              <li>Growing the recruitment team</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
     <section class="section section--tint" id="contact">
-      <div class="container" data-slot="contact"></div>
+      <div class="container">
+        <h2 class="section__heading">Get in touch</h2>
+        <p class="contact__text">Tell me a couple of words about your task or the role — I reply within a day.</p>
+        <div class="contact__list">
+          
+          <a class="contact__item" href="mailto:byalexei@gmail.com?subject=Contact%20from%20byalexei.github.io">
+            <span class="contact__icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span>
+            <span class="contact__body">
+              <span class="contact__label">Email <span class="contact__badge">Preferred</span></span>
+              <span class="contact__value">byalexei@gmail.com</span>
+            </span>
+          </a>
+          <a class="contact__item" href="https://t.me/avbychkov" target="_blank" rel="noopener noreferrer">
+            <span class="contact__icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 2 11 13"/><path d="M22 2 15 22l-4-9-9-4 20-7z"/></svg></span>
+            <span class="contact__body">
+              <span class="contact__label">Telegram</span>
+              <span class="contact__value">@avbychkov</span>
+            </span>
+          </a>
+          <a class="contact__item" href="tel:+79035272060">
+            <span class="contact__icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
+            <span class="contact__body">
+              <span class="contact__label">Phone</span>
+              <span class="contact__value">+7 (903) 527-20-60</span>
+            </span>
+          </a>
+          <a class="contact__item" href="https://wa.me/998908282189" target="_blank" rel="noopener noreferrer">
+            <span class="contact__icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></span>
+            <span class="contact__body">
+              <span class="contact__label">WhatsApp <span class="contact__note">· separate number</span></span>
+              <span class="contact__value">+998 (90) 828-21-89</span>
+            </span>
+          </a>
+          <a class="contact__item" href="https://www.linkedin.com/in/avbychkov" target="_blank" rel="noopener noreferrer">
+            <span class="contact__icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></span>
+            <span class="contact__body">
+              <span class="contact__label">LinkedIn</span>
+              <span class="contact__value">linkedin.com/in/avbychkov</span>
+            </span>
+          </a>
+        </div>
+        
+        <div class="buttons">
+          <a class="btn btn--primary" href="mailto:byalexei@gmail.com?subject=Contact%20from%20byalexei.github.io">Send an email</a>
+        </div>
+      </div>
     </section>
-
   </main>
 
   <footer class="footer">
-    <div class="container footer__inner" data-slot="footer"></div>
+    <div class="container footer__inner">
+      <span>© 2026 Alexey Bychkov</span>
+      <span>Handcrafted</span>
+    </div>
   </footer>
 
-  <!-- Сначала содержимое, потом код, который его расставляет по местам -->
-  <script src="data.js"></script>
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </body>
 </html>

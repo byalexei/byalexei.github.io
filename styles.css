@@ -12,7 +12,7 @@
 
   --ink:         #14161a;          /* основной текст */
   --ink-soft:    #4f5663;          /* второстепенный текст */
-  --ink-faint:   #8b92a0;          /* совсем тихий текст: даты, подписи */
+  --ink-faint:   #667085;          /* тихий текст: даты, подписи (контраст 4.9:1 — WCAG AA) */
 
   --bg:          #ffffff;
   --line:        #e4e7ec;          /* линии и рамки */
@@ -55,7 +55,7 @@ h1, h2, h3, h4 { line-height: 1.2; margin: 0; font-weight: 600; letter-spacing: 
 
 p { margin: 0 0 1em; }
 
-ul { margin: 0; padding: 0; list-style: none; }
+ul, ol { margin: 0; padding: 0; list-style: none; }
 
 img { max-width: 100%; display: block; }
 
@@ -132,6 +132,9 @@ img { max-width: 100%; display: block; }
 
 .lang {
   font: inherit;
+  display: inline-block;
+  line-height: 1.4;
+  text-decoration: none;
   font-size: 13px;
   font-weight: 600;
   letter-spacing: .04em;
@@ -146,7 +149,7 @@ img { max-width: 100%; display: block; }
 
 .lang:hover { border-color: var(--accent); background: var(--tint); }
 
-@media (max-width: 640px) {
+@media (max-width: 760px) {
   .nav { display: none; }
   .lang { margin-left: auto; }
 }
@@ -224,7 +227,7 @@ img { max-width: 100%; display: block; }
 
 /* Фотография в градиентном кольце */
 .hero__avatar {
-  width: clamp(140px, 24vw, 190px);
+  width: clamp(180px, 28vw, 240px);
   aspect-ratio: 1;
   padding: 5px;
   border-radius: 50%;
@@ -300,6 +303,64 @@ img { max-width: 100%; display: block; }
 }
 
 .btn--ghost:hover { border-color: var(--accent); color: var(--accent); transform: translateY(-2px); }
+
+/* Круглая кнопка с иконкой (LinkedIn) */
+.btn--icon {
+  width: 46px;
+  height: 46px;
+  padding: 0;
+  justify-content: center;
+  border-color: var(--line-accent);
+  color: var(--accent);
+  background: #fff;
+}
+
+.btn--icon:hover { border-color: var(--accent); background: var(--tint); transform: translateY(-2px); }
+
+.btn svg { width: 18px; height: 18px; }
+
+/* Выпадающее меню «Скачать резюме» */
+.dropdown { position: relative; }
+
+.dropdown__toggle svg { transition: transform .2s; }
+.dropdown.is-open .dropdown__toggle svg { transform: rotate(180deg); }
+
+.dropdown__menu {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  min-width: 220px;
+  padding: 6px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  box-shadow: 0 18px 44px -18px color-mix(in srgb, var(--ink) 40%, transparent);
+  opacity: 0;
+  transform: translateY(-6px);
+  pointer-events: none;
+  transition: opacity .18s, transform .18s;
+  z-index: 5;
+}
+
+.dropdown.is-open .dropdown__menu {
+  opacity: 1;
+  transform: none;
+  pointer-events: auto;
+}
+
+.dropdown__menu a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  border-radius: 9px;
+  font-size: 15px;
+  text-decoration: none;
+  color: var(--ink);
+}
+
+.dropdown__menu a:hover { background: var(--wash); color: var(--accent); }
+.dropdown__menu svg { width: 18px; height: 18px; color: var(--accent); }
 
 /* --- Секции ------------------------------------------------------ */
 
@@ -404,6 +465,45 @@ img { max-width: 100%; display: block; }
   .about { grid-template-columns: 1fr; }
 }
 
+/* --- Ключевые результаты ----------------------------------------- */
+
+.results {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 16px;
+  margin-top: 36px;
+  counter-reset: result;
+}
+
+.results li {
+  position: relative;
+  padding: 22px 24px 22px 68px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  color: var(--ink);
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Номер результата в градиентном кружке */
+.results li::before {
+  counter-increment: result;
+  content: counter(result);
+  position: absolute;
+  left: 22px;
+  top: 20px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 13px;
+  font-weight: 700;
+  color: #fff;
+  background: var(--gradient);
+}
+
 /* --- Опыт работы ------------------------------------------------- */
 
 .timeline { position: relative; display: grid; }
@@ -490,6 +590,54 @@ img { max-width: 100%; display: block; }
   }
 
   .job:first-child { border-top: none; margin-top: 0; padding-top: 0; }
+}
+
+/* --- Ранние позиции: свёрнуты по умолчанию ----------------------- */
+
+.early {
+  margin-top: 34px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--wash);
+}
+
+.early__summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 18px 22px;
+  cursor: pointer;
+  list-style: none;
+  font-weight: 500;
+}
+
+.early__summary::-webkit-details-marker { display: none; }
+
+.early__hint {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--accent);
+  white-space: nowrap;
+}
+
+.early__hint svg { width: 16px; height: 16px; transition: transform .2s; }
+.early[open] .early__hint svg { transform: rotate(180deg); }
+.early__summary:hover .early__hint { text-decoration: underline; }
+
+.timeline--early {
+  padding: 8px 22px 22px;
+  border-top: 1px solid var(--line);
+}
+
+.timeline--early .job { padding-top: 22px; }
+.timeline--early .job__role { font-size: 1.02rem; }
+
+@media (min-width: 681px) {
+  .timeline--early::before { left: calc(13rem + 19px + 22px); top: 30px; bottom: 30px; }
 }
 
 /* --- Образование (внизу блока с опытом) -------------------------- */
@@ -618,7 +766,9 @@ img { max-width: 100%; display: block; }
 
 .contact__item {
   position: relative;
-  display: block;
+  display: flex;
+  align-items: center;
+  gap: 16px;
   padding: 18px 20px;
   background: #fff;
   border: 1px solid var(--line);
@@ -633,6 +783,40 @@ img { max-width: 100%; display: block; }
   box-shadow: 0 14px 32px -22px color-mix(in srgb, var(--accent) 70%, transparent);
 }
 
+.contact__icon {
+  flex: none;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  color: var(--accent);
+  background: var(--tint);
+}
+
+.contact__icon svg { width: 20px; height: 20px; }
+
+.contact__body { min-width: 0; }
+
+.contact__note {
+  text-transform: none;
+  letter-spacing: 0;
+  font-weight: 500;
+  color: var(--ink-faint);
+}
+
+.contact__badge {
+  display: inline-block;
+  margin-left: 6px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 10px;
+  letter-spacing: .06em;
+  color: #fff;
+  background: var(--gradient);
+  vertical-align: 1px;
+}
+
 .contact__label {
   display: block;
   font-size: 11px;
@@ -644,6 +828,36 @@ img { max-width: 100%; display: block; }
 }
 
 .contact__value { font-weight: 500; word-break: break-word; }
+
+/* --- Рекомендации (показываются, когда появятся цитаты) ---------- */
+
+.quotes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin-top: 36px;
+}
+
+.quote {
+  margin: 0;
+  padding: 28px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+.quote__text {
+  margin: 0 0 18px;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: var(--ink);
+}
+
+.quote__text::before { content: 'C'; color: var(--accent); font-size: 1.6em; line-height: 0; margin-right: 4px; }
+
+.quote__author { display: grid; gap: 2px; font-size: 14px; }
+.quote__name { font-weight: 600; }
+.quote__title { color: var(--ink-faint); }
 
 /* --- Подвал ------------------------------------------------------ */
 
@@ -681,7 +895,8 @@ img { max-width: 100%; display: block; }
 /* --- Печать ------------------------------------------------------ */
 
 @media print {
-  .header, .buttons, .hero__status, .footer, .timeline::before { display: none !important; }
+  .header, .buttons, .hero__status, .footer, .timeline::before, .contact__icon { display: none !important; }
+  .early { border: none; background: none; }
 
   body { font-size: 11pt; color: #000; }
 
