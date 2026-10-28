@@ -116,7 +116,7 @@ const SITE = {
       heading: 'Selected results',
       items: [
         'Company-wide job grading system, competency model and assessment framework — implemented at HR Baraka Group',
-        'KPI / OKR performance management rolled out across a 25+ person, 7-function HR department',
+        'Company-wide KPI / OKR performance management implemented at HR Baraka Group — and, earlier, performance management with competency assessment at R-Pharm',
         'HR integration of ~10 M&A and JV deals at R-Pharm, including Canon Medical Systems and Albiogen',
         'Core HR processes digitalized across the Moscow HQ and 14 international offices of Rusatom International Network',
         'Russian and international teams rebuilt for new business realities; HR team rated highly by internal clients — Rusatom',
@@ -384,7 +384,7 @@ const SITE = {
       heading: 'Ключевые результаты',
       items: [
         'Внедрил систему грейдов, модель компетенций и систему оценки в масштабе холдинга — HR Baraka Group',
-        'Запустил performance management на базе KPI / OKR в HR-департаменте из 25+ человек и 7 функций',
+        'Внедрил управление эффективностью на базе KPI / OKR на уровне всей компании — HR Baraka Group; ранее — performance management с оценкой компетенций в Р-Фарм',
         'Провёл HR-интеграцию ~10 сделок M&A и СП в Р-Фарм, включая Canon Medical Systems и Albiogen',
         'Цифровизировал ключевые HR-процессы штаб-квартиры и 14 зарубежных офисов «Русатом — Международная Сеть»',
         'Оперативно перестроил российскую и международную команды под новые вызовы, собрал HR-команду с высокой оценкой сервиса — Русатом',
