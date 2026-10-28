@@ -90,7 +90,7 @@ const SITE = {
         { value: '16 years', label: 'in the profession' },
         { value: '5+ years', label: 'as HR Director' },
         { value: '~10',      label: 'M&A and JV deals' },
-        { value: '14',       label: 'offices in the network' },
+        { value: '2',        label: 'HR functions built from scratch' },
         { value: '25+',      label: 'team members led' }
       ],
       skillsHeading: 'Core competencies',
@@ -340,7 +340,7 @@ const SITE = {
         { value: '16 лет',  label: 'в профессии' },
         { value: '5+ лет',  label: 'на позиции HRD' },
         { value: '~10',     label: 'сделок M&A и СП' },
-        { value: '14',      label: 'офисов в международной сети' },
+        { value: '2',       label: 'HR-функции, построенные с нуля' },
         { value: '25+',     label: 'человек в подчинении' }
       ],
       skillsHeading: 'Ключевые компетенции',
