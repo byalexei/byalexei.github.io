@@ -18,6 +18,7 @@
 
 const fs = require('fs');
 const path = require('path');
+const crypto = require('crypto');
 const SITE = require('./data.js');
 
 /* --- Помощники --------------------------------------------------- */
@@ -35,6 +36,11 @@ const digits = (s) => String(s).replace(/[^\d+]/g, '');
 
 // Разрешает перенос адреса только по логичным границам: перед @ и после /
 const breakable = (s) => esc(s).replace(/@/g, '<wbr>@').replace(/\//g, '/<wbr>');
+
+// Версия файла по его содержимому: styles.css?v=1a2b3c4d.
+// Файл изменился — адрес новый, и браузер не возьмёт старую копию из кэша.
+const ver = (file) =>
+  crypto.createHash('md5').update(fs.readFileSync(file)).digest('hex').slice(0, 8);
 
 // Страницы для сборки: язык -> папка и префикс путей к общим файлам
 const PAGES = {
@@ -119,7 +125,7 @@ function head(lang, t, page) {
   <link rel="apple-touch-icon" href="${page.base}apple-touch-icon.png">
   <meta name="theme-color" content="${SITE.accent}">
 
-  <link rel="stylesheet" href="${page.base}styles.css">
+  <link rel="stylesheet" href="${page.base}styles.css?v=${ver('styles.css')}">
   <style>:root{--accent:${SITE.accent};--accent-2:${SITE.accent2};}</style>
 
   <script type="application/ld+json">${JSON.stringify(jsonLd)}</script>`;
@@ -400,7 +406,7 @@ ${contact(t)}
   </main>
 ${footer(t)}
 
-  <script src="${p.base}script.js" defer></script>
+  <script src="${p.base}script.js?v=${ver('script.js')}" defer></script>
 </body>
 </html>
 `;

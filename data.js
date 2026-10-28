@@ -82,7 +82,7 @@ const SITE = {
     about: {
       heading: 'About me',
       paragraphs: [
-        '16 years in HR: over five of them as HR Director, another five as HR Business Partner. Twice built the HR function from scratch in new businesses with limited resources — from the first recruiter to a full-scope function: recruitment, C&B, job grading, assessment, learning and development, communications, HR administration.',
+        '16 years in HR: over five of them as HR Director, another five as HR Business Partner. Built the HR function from scratch three times, in new businesses with limited resources — from the first recruiter to a full-scope function: recruitment, C&B, job grading, assessment, learning and development, communications, HR administration.',
         'Supported M&A deals and joint venture launches, managed international teams across Russia, CIS and Europe, including a network of 14 offices worldwide. Currently a partner at Gradex, a full-cycle HR consulting practice with a proprietary AI-powered job grading platform in its toolkit.',
         'In the HR function I value a service mindset and a technological edge. Looking for an HR leadership role with a broad scope of responsibility and a matching level of authority.'
       ],
@@ -90,7 +90,8 @@ const SITE = {
         { value: '16 years', label: 'in the profession' },
         { value: '5+ years', label: 'as HR Director' },
         { value: '~10',      label: 'M&A and JV deals' },
-        { value: '2',        label: 'HR functions built from scratch' },
+        { value: '3',        label: 'HR functions built from scratch' },
+        { value: '20+',      label: 'external HR projects delivered' },
         { value: '25+',      label: 'team members led' }
       ],
       skillsHeading: 'Core competencies',
@@ -237,7 +238,7 @@ const SITE = {
       items: [
         {
           title: 'HR function from scratch',
-          desc: 'Building HR from a blank page, or rebuilding what is already there. Done it twice from the inside.',
+          desc: 'Building HR from a blank page, or rebuilding what is already there. Done it three times from the inside.',
           bullets: ['Audit of the current state', 'Roadmap and org design', 'Full set of HR policies', 'Hiring and launching the HR team']
         },
         {
@@ -332,7 +333,7 @@ const SITE = {
     about: {
       heading: 'Обо мне',
       paragraphs: [
-        '16 лет в HR: пять с лишним лет — директором по персоналу, ещё пять — HR бизнес-партнёром. Дважды строил HR-функцию с нуля в новых бизнесах и в условиях ограниченных ресурсов — от первого рекрутёра до полного контура: подбор, C&B, грейдинг, оценка, обучение, коммуникации, кадровое администрирование.',
+        '16 лет в HR: пять с лишним лет — директором по персоналу, ещё пять — HR бизнес-партнёром. Трижды строил HR-функцию с нуля в новых бизнесах и в условиях ограниченных ресурсов — от первого рекрутёра до полного контура: подбор, C&B, грейдинг, оценка, обучение, коммуникации, кадровое администрирование.',
         'Сопровождал сделки M&A и запуск совместных предприятий, управлял международными командами в России, СНГ и Европе, включая сеть из 14 зарубежных офисов. Сейчас — партнёр в HR-консалтинговой практике полного цикла Gradex, в арсенале которой собственная AI-платформа грейдирования должностей.',
         'В HR-функции ценю сервисность и технологичность. Ищу роль HR-лидера с широкой зоной ответственности и соответствующим масштабом полномочий.'
       ],
@@ -340,7 +341,8 @@ const SITE = {
         { value: '16 лет',  label: 'в профессии' },
         { value: '5+ лет',  label: 'на позиции HRD' },
         { value: '~10',     label: 'сделок M&A и СП' },
-        { value: '2',       label: 'HR-функции, построенные с нуля' },
+        { value: '3',       label: 'HR-функции, построенные с нуля' },
+        { value: '20+',     label: 'внешних HR-проектов' },
         { value: '25+',     label: 'человек в подчинении' }
       ],
       skillsHeading: 'Ключевые компетенции',
@@ -486,7 +488,7 @@ const SITE = {
       items: [
         {
           title: 'HR-функция с нуля',
-          desc: 'Сборка HR с чистого листа или пересборка того, что уже есть. Дважды делал это изнутри компании.',
+          desc: 'Сборка HR с чистого листа или пересборка того, что уже есть. Трижды делал это изнутри компании.',
           bullets: ['Аудит текущего состояния', 'Дорожная карта и оргдизайн', 'Локальные нормативные акты', 'Наём и запуск HR-команды']
         },
         {

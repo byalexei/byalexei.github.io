@@ -420,9 +420,9 @@ img { max-width: 100%; display: block; }
 .about__text p:last-child { margin-bottom: 0; }
 
 .facts {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 26px 38px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px 28px;
   margin-bottom: 34px;
 }
 
