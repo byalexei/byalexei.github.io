@@ -665,9 +665,20 @@ img { max-width: 100%; display: block; }
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 20px;
   counter-reset: card;
+}
+
+/* Планшет: две колонки; если карточек нечётное число,
+   последняя растягивается на всю ширину, а не висит одна */
+@media (max-width: 900px) {
+  .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .grid > .card:last-child:nth-child(odd) { grid-column: 1 / -1; }
+}
+
+@media (max-width: 600px) {
+  .grid { grid-template-columns: 1fr; }
 }
 
 .card {

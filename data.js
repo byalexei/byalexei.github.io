@@ -241,7 +241,7 @@ const SITE = {
         {
           title: 'HR function from scratch',
           desc: 'Building HR from a blank page, or rebuilding what is already there. Done it three times from the inside.',
-          bullets: ['Audit of the current state', 'Roadmap and org design', 'Full set of HR policies', 'Hiring and launching the HR team']
+          bullets: ['Audit of the current state', 'Roadmap and org design', 'HR process design', 'Hiring and launching the HR team']
         },
         {
           title: 'Job grading and rewards',
@@ -267,6 +267,21 @@ const SITE = {
           title: 'Recruitment and executive search',
           desc: 'Filling key positions and turning recruitment into a process rather than an emergency.',
           bullets: ['Executive search', 'International search', 'Funnel and metrics setup', 'Growing the recruitment team']
+        },
+        {
+          title: 'Internal communications',
+          desc: 'Channels through which people hear what matters first-hand and on time — and leadership hears them back.',
+          bullets: ['Communication strategy and plan', 'Launching internal channels', 'Change communications', 'Engagement surveys']
+        },
+        {
+          title: 'Employer brand',
+          desc: 'An employer image that attracts the right people — and matches what they find once inside.',
+          bullets: ['Employee value proposition (EVP)', 'Positioning on the talent market', 'University partnerships and graduate programs', 'Internship programs']
+        },
+        {
+          title: 'HR policies and regulations',
+          desc: 'A complete set of internal documents that protects the company and makes the rules clear to everyone.',
+          bullets: ['Audit of existing documents', 'Pay and bonus regulations', 'Internal labor regulations', 'HR process procedures']
         }
       ]
     },
@@ -493,7 +508,7 @@ const SITE = {
         {
           title: 'HR-функция с нуля',
           desc: 'Сборка HR с чистого листа или пересборка того, что уже есть. Трижды делал это изнутри компании.',
-          bullets: ['Аудит текущего состояния', 'Дорожная карта и оргдизайн', 'Локальные нормативные акты', 'Наём и запуск HR-команды']
+          bullets: ['Аудит текущего состояния', 'Дорожная карта и оргдизайн', 'Выстраивание HR-процессов', 'Наём и запуск HR-команды']
         },
         {
           title: 'Грейдинг и вознаграждение',
@@ -519,6 +534,21 @@ const SITE = {
           title: 'Подбор и прямой поиск',
           desc: 'Закрытие ключевых позиций и настройка подбора как процесса, а не как аврала.',
           bullets: ['Executive search', 'Международный поиск', 'Настройка воронки и метрик', 'Развитие команды рекрутеров']
+        },
+        {
+          title: 'Внутренние коммуникации',
+          desc: 'Каналы, через которые сотрудники вовремя и из первых рук узнают о главном, а руководство слышит обратную связь.',
+          bullets: ['Стратегия и план коммуникаций', 'Запуск внутренних каналов', 'Коммуникации в период изменений', 'Исследования вовлечённости']
+        },
+        {
+          title: 'HR-бренд',
+          desc: 'Образ работодателя, который привлекает нужных людей и совпадает с тем, что они видят внутри.',
+          bullets: ['Ценностное предложение работодателя (EVP)', 'Позиционирование на рынке труда', 'Партнёрства с вузами и graduate-проекты', 'Программы стажировок']
+        },
+        {
+          title: 'Локальные нормативные акты',
+          desc: 'Полный комплект внутренних документов, который защищает компанию и делает правила понятными для всех.',
+          bullets: ['Аудит действующих документов', 'Положения об оплате труда и премировании', 'Правила внутреннего трудового распорядка', 'Регламенты HR-процессов']
         }
       ]
     },
